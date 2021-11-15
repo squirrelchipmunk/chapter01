@@ -17,5 +17,6 @@ public class Ex05 {
 		
 		sc.close();
 		System.out.println("버전2");
+		
 	}
 }
