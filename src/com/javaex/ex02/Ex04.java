@@ -14,6 +14,6 @@ public class Ex04 {
 		System.out.println("당신의 이름은 "+name+" 나이는 "+age+" 입니다.");
 		
 		sc.close();
-		
+		System.out.println("버전4");
 	}
 }
