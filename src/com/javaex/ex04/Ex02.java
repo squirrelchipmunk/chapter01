@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex02 {
 
 	public static void main(String[] args) {
-
+		//구구단 출력
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("단을 입력해주세요");
