@@ -1,20 +1,31 @@
 package com.javaex.ex04;
 
+import java.util.Scanner;
+
 public class Ex09 {
 
 	public static void main(String[] args) {
-		
-		int i=1; // 비교할 정수 초기값
-		
+
+		Scanner sc = new Scanner(System.in);
+
+		int num;
 		while(true) {
-			if(i%6==0 && i%14==0) {
-				// 6의 배수이면서 14의 배수
-				System.out.println(i);
+			System.out.println("숫자를 입력하세요");
+			num = sc.nextInt();
+			if(num==0) { // 0이면 종료	
+				System.out.println("종료");
 				break;
 			}
-			i++;
+			if(num%3==0) // 3의 배수이면
+				System.out.println("3의 배수입니다.");
+			else
+				System.out.println("3의 배수가 아닙니다.");
+
 		}
-		
+
+
+		sc.close();
+
 
 	}
 

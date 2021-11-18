@@ -12,15 +12,17 @@ public class Ex02 {
 		System.out.print("단 : ");
 		
 		int dan = sc.nextInt();
-		int i=1;
+		/*int i=1;
 		while(i<=9) {
 			System.out.println(dan+" * "+i+" = "+ dan*i);
-			//System.out.printf("%d + %d = %d\n",dan, i, dan*i);
-			//System.out.println(String.format("%d + %d = %d",dan, i, dan*i));
 			i++;
+		}*/
+		for(int i=1 ; i<=9 ; i++) {
+			System.out.println(dan+" * "+i+" = "+ dan*i);
 		}
 		
 		sc.close();
+
 	}
 
 }

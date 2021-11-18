@@ -5,25 +5,14 @@ import java.util.Scanner;
 public class Ex10 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		int num;
-		while(true) {
-			System.out.println("숫자를 입력하세요");
-			num = sc.nextInt();
-			if(num==0) { // 0이면 종료	
-				System.out.println("종료");
-				break;
+		for(int i=1;i<=10;i++) {
+			if(i % 2 == 0 && i % 3 == 0) { 		// 2의 배수이면서 3의 배수
+				//break;    // --> 반복문 종료
+				continue;	// 다음 반복으로
 			}
-			if(num%3==0) // 3의 배수이면
-				System.out.println("3의 배수입니다.");
-			else
-				System.out.println("3의 배수가 아닙니다.");
-			
-		}
-		
-		
-		sc.close();
+			System.out.println(i);
+		} // for문의 끝
+
 
 	}
 
